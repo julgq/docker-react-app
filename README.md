@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+------
+
+### Links Docker running wiht node
+
+Important Link: [https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11436998#questions/14297316](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/learn/lecture/11436998#questions/14297316)
+
+### Run node with docker-compose and volumes.
+
+```sh
+sudo docker-compose build --no-cache web && sudo docker-compose up -d
+```
+
+### Run tests from docker-compose
+
+```sh
+sudo docker-compose build --no-cache web && sudo docker-compose up --build
+```
+
+### Run node in production using Ngnix
+
+```sh
+docker build .
+docker run -p 8080:80 [docker_image_id]
+```
+
